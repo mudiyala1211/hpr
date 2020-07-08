@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sample template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="myheader">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="logo text-center">
+                        <h1 class="text text-capitalize text-muted"><span class="text active">MY</span>Design</h1>
+                        <p class=" text text-muted">Just another PSD template.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 ">
+                        <div class="menubar align-middle ">
+                                <nav class="navbar">
+                                        <ul class="nav navbar-nav text text-uppercase text-muted">
+                                          <li class="text text-white menubarli"><a href="index.html" class="color active  bg bg-dark">Home</a></li>
+                                          <li class="menubarli"><a href="#"  class="color text text-muted bg bg-dark">services</a></li>
+                                          <li class="menubarli"><a href="#"  class="color text text-muted bg bg-dark">portfolio</a></li>
+                                          <li class="menubarli"><a href="#"  class="color text text-muted bg bg-dark">about</a></li>
+                                          <li class="menubarli"><a href="contact.html"  class="color text text-muted bg bg-dark">contact</a></li>
+                                          <li class="menubarli"><a href="login.html"  class="color text text-muted bg bg-dark">Login</a></li>
+                                          <li class="menubarli"><a href="registration.html"  class="color text text-muted bg bg-dark">Registration</a></li>
+                                        </ul>
+                                </nav>
+                        </div>
+                </div>
+            </div>
+        </div>
+</header>
+<section class="login-form">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+          <div class="login">
+              <form name="myForm" method="POST"  action="login.php" style="max-width:500px;margin:auto" autocomplete="off" novalidate>
+                <h2 class="text-center"><span class="l">MYD</span>esign</h2>
+                <div class="input-container">
+                  <i class="fa fa-user icon"></i>
+                  <input class="input-field" type="text" placeholder="Username" name="uname" id="uname">
+                </div>
+                <div class="error" id="error"><p>username should not be empty</p></div>
+                <div class="error" id="error1"><p>username should be 8 to 15 charecter </p></div>
+                <div class="input-container">
+                  <i class="fa fa-key icon"></i>
+                  <input class="input-field" type="password" placeholder="Password" name="password" id="password">
+                </div>
+                <div class="error" id="error-p"><p>password should not be empty</p></div>
+                <div class="error" id="error-p1"><p>password should be uppercase lowercase special charecter.</p></div>
+                <div class="input-container">
+                 <p><a href="#">Forgot password?</a></p>
+                   <p class="text-right"><button type="submit" class="btn" id="login_btn">Login</button></p>
+                  </div>
+                
+              </form>
+              
+          </div>
+      </div>
+    </div>
+  </div>
+</section>   
+
+
+
+
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+          <div class="myfooter">
+              <h5 class="text text-center text-muted">Made with in Earth</h5>
+              <p class="text text-center text-muted subscribep1">
+                  All rights reseved Copyright @ <span class="active">MYDesign</span> 
+              </p>
+              <p class="text text-center text-success subscribe subscribep2">
+               Find us on
+              </p>
+                <ul class="icons">
+                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-linkedin"  style="font-size:24px;"></i></li>
+                </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>
+<script type="text/javascript">
+    $(function(){
+        $('#login_btn').click(function(){
+          var Uname = $('#uname').val();
+          var Password =$('#password').val();
+            if(Uname !=" " && Password !=""){
+             $.ajax({
+                
+                 type:'POST',
+                 url:'login.php',
+                 data:{
+                    uname:Uname,
+                    password:Password
+                  },
+                success:function(data) {
+                  if(data == "Success")
+                    {
+                      window.location.href="index1.html";
+                    }
+                  else
+                    {
+                       alert("Wrong Details");
+                    }
+                  }
+              });
+            }
+        else
+          {
+              alert("Please Fill All The Details");
+          }
+
+        return false;
+        });
+  
+    });
+   
+
+   
+</script>
+
+</body>
+</html>

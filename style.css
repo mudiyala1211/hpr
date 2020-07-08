@@ -1,0 +1,357 @@
+.myheader{
+    width:100%;
+    background-color:#313A43;
+}
+.myheader h1{
+    font-weight: 100;
+    font-family: arial;
+    letter-spacing: 3px;
+    margin-left: 5%;
+    margin-bottom: 0.5%;
+}
+.logo{
+    margin-left: 5%;
+}
+.myheader p{
+    font-size: 20px;
+    padding: 0 0 0 13%;
+}
+#menubar{
+    height: 104px !important;
+    padding: 4% 2% ;
+    font-size: 14px;
+}
+.menubar{
+    height: 104px !important;
+    padding: 4% 8%;
+    font-size: 14px;
+}
+.color:hover{
+    background-color:#2C343C !important;
+    color:white;
+    border-bottom: 2px solid red;
+}
+.active{
+    color:white;
+}
+ .menubar .active{
+    color:white;
+    border-bottom: 2px solid red;
+}
+#bgtext p{
+	margin-top:-200px;
+	font-size:22px;
+}
+#bgtext h3{
+	font-size: 50px;
+    width: 100%;
+}
+.captiontxt{
+    top: 16%;
+    left: 0%;
+}
+.captiontxt img{
+    width: 25%;
+    height: 210px;
+    position: absolute;
+    top: 13%;
+    left: 77%;
+    border-radius: 6%;
+}
+.captiontxt h1{
+    margin-left: -20%
+}
+.captiontxt > p{
+    padding: 0.5% 24%;
+    font-size: 24px;
+}
+.item > img{
+    height:500px;
+}
+/* content  */
+.content1_info{
+    padding: 3% 0;
+}
+.content1_info > p{
+    padding: 0 10%;
+    font-size: 21px;
+}
+button, input, select, textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.content2{
+    background-color: lightgray;
+}
+.content2_info{
+    padding:3% 0 2% 0;;
+}
+.content2_info >p{
+    padding: 0 24%;
+    font-size: 16px;
+}
+.services >div > div:nth-child(2){
+    padding: 0 14% !important;
+}
+.gallery-info h3{
+    font-weight: 600px;
+    margin-bottom: 2%;
+}
+#gallery-img figure img{
+    width:100%;
+}
+figcaption > p{
+    margin-bottom: 15%;
+}
+.content3{
+    background-color: lightgray;
+}
+#slider img{
+    width: 25%;
+    height: 260px !important;
+    float: left;
+    margin: 0.5% 0% 0% 0.5%;
+  }
+  #slider{
+    background-color: #D3D3D3 !important;
+  }
+  #slider .item img:nth-child(1),#slider .item img:nth-child(2),#slider .item img:nth-child(3){
+      margin-top:2%; 
+  }
+  #slider .item img:nth-child(7),#slider .item img:nth-child(8),#slider .item img:nth-child(9){
+    margin-bottom:4%; 
+}
+.contact{
+    background-color: #ffffff;
+}
+.contact_form{
+    padding:1% 25%;
+    background-color: white !important;
+}
+.email{
+    position: relative;
+    top: -60px;
+    left: 265px;
+}
+.myform p:nth-child(2){
+    margin-top:-8%;
+}
+.gallery >div >div:nth-child(3){
+    height:auto !important;
+    background-image: url('images/bgimg.jpg');
+
+}
+.bg-img p{
+    padding: 5% 16% 2%;
+    font-size: 24px;
+}
+.bg-img > img{
+    margin-left: 43%;
+    border-radius: 100%;
+    margin: -2% 0 0 43%;
+    padding: 1%;
+}
+.bg-img h5{
+    font-size: 20px;
+    padding: 2% 0;
+}
+.about h2{
+    margin: 4% 20% 2%;
+    letter-spacing: 1px;
+}
+.about p{
+    font-size: 18px;
+    padding: 0 17%;
+    font-weight: lighter;
+}
+.aboutp{
+    font-size: 27px !important;
+    font-weight: inherit !important;
+    padding: 1% 0% 0% !important;
+}
+.fig figure{
+    margin: 0 30%;
+    padding:1%;
+    border-radius: 1%;
+}
+.fig img{
+    max-width: 100%;
+}
+.fig h5{
+    font-size: 20px;
+    padding: 0% 1% 0% 1%;
+    font-weight: bold;
+    color: currentColor;
+}
+.fig .fig-p{
+    margin-top: -2%;
+    font-size: 18px;
+}
+.fig .figp1{
+    margin: -14% 4% 3%;
+}
+.box{
+    padding: 1% 0%;
+    border: 1px solid lightgray;
+    margin: 0% 24% 2%;
+    background-color: lightgray;
+    border-radius: 12px;
+}
+.info span:nth-child(1){
+    font-size: 20px;
+    margin-left:1%;
+}
+.info span:nth-child(2){
+    font-size: 16px;
+}
+footer{
+    background-color:#505050;
+}
+.myfooter h2{
+    margin: 3% 0% 2%;
+}
+.myfooter input{
+    width: 36%;
+    padding: 1%;
+    border: 2px solid lightgray;
+    border-radius: 7px;
+    margin: 0 7%;
+}
+.myfooter .subscribe{
+    font-size: 16px;
+    padding: 1% 35%;
+}
+.myfooter button{
+    width: 13%;
+    font-size: 20px;
+    margin-bottom: 1%;
+    padding: 0.5%;
+}
+.myfooter h5{
+    font-size: 20px;
+    padding: 1%;
+}
+footer > div > div:nth-child(2){
+    background-color:#404040;
+} 
+footer .subscribep1{
+    margin: -1%;
+    font-size: 16px;
+}
+footer .subscribep2{
+    font-size: 20px !important;
+    padding: 2% 0% 1% !important;
+}
+footer ul{
+    margin:0 0 7% 40%;
+}
+footer li{
+    list-style-type: none;
+    float: left;
+    margin-left: 3%;
+    font-size: 30px;
+    color: gray;
+}
+
+
+/* login css */
+.login-form{
+    padding: 5% 34%;
+    background-image: linear-gradient(to right, #787F6D , #2E6B75);
+    margin: 0;
+}
+.login{
+    margin: 7.6% 0%;
+    border-radius: 25px;
+    padding: 10% 10%;
+    background-image: linear-gradient(to right, #787F6D , #2E6B75);
+}
+.login h2{
+    margin: -3% 0 6% 0;
+}
+.login .l{
+    font-size: 45px;
+    color: #2E6B75;
+}
+.login h2::first_letter{
+   color:#2E6B75;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.login a{
+    color:white !important;
+    font-size: 14px;
+    margin-left: 2%;
+}
+.login a:hover{
+    color:#2E6B75 !important;
+}
+.icon {
+  padding: 10px;
+  background: #2E6B75;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.input-container p:nth-child(2),.input-container p:nth-child(1){
+    width: 100%;
+}
+.input-field:focus {
+  border: 2px solid #2E6B75;
+}
+.error{
+    position: relative;
+    top: -20px;
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+/* Set a style for the submit button */
+.login .btn {
+    width: 75% !important;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+}
+.Register{
+    padding: 5% 30% !important;
+}
+.Register .login{
+    padding: 6% 5% !important;
+}
+.btn:hover {
+  opacity: 1;
+  background-color:#2E6B75;
+}
+.Register p .btn{
+    width:100% !important;
+}
+select.gender {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.checktext{
+    font-size: 16px !important;
+}
+
+.information{
+    padding:5% 0;
+    margin: 5% 0%;
+}
